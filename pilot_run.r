@@ -1,22 +1,3 @@
-if (!requireNamespace("BiocManager", quietly = TRUE))
-  install.packages("BiocManager")
-
-install.packages("C:/Gresham/Project_Carolino_new/ribodipa/rtracklayer_1.50.0.tar.gz", repos = NULL, type="source")
-
-install.packages("devtools")
-
-library(devtools)
-install_github("lawremi/rtracklayer")
-
-BiocManager::install("rtracklayer")
-
-BiocManager::install("GenomicFeatures")
-
-# The following initializes usage of Bioc devel
-BiocManager::install(version='devel')
-
-BiocManager::install("RiboDiPA")
-
 ###
 
 library(RiboDiPA)
